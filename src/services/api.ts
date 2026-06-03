@@ -36,7 +36,7 @@ export const settlementApi = {
         },
         body: JSON.stringify({
           action: 'SAVE_SETTLEMENT',
-          payload: payload
+          payload: JSON.stringify(payload)
         })
       });
 
