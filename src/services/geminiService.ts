@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 // Lấy API Key từ biến môi trường (hoặc fallback nếu chưa cấu hình)
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || 'AIzaSyDtpZXtUckhgdLFt-G6P_O_iN_V_IB2ixo';
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || '';
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 // Gộp Prompts của Agent 02 và 03
