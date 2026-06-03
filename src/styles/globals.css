@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-xl font-medium transition-all active:scale-95 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-indigo-700 shadow-md shadow-indigo-200;
+  }
+  .btn-accent {
+    @apply bg-accent text-white hover:bg-rose-600 shadow-md shadow-rose-200;
+  }
+}
